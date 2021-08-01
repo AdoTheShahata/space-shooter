@@ -45,7 +45,7 @@ basic.forever(function() {
         led.plotBrightness(px, my, 51)
         for (let index4 = 0; index4 <= 4; index4++) {
             if (killed[index4] == 0 && (px == enemyX[index4] && my == enemyY[index4])) {
-
+                killed[index4] = 1
             }
         }
     }
